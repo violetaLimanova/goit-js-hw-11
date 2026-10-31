@@ -1,12 +1,12 @@
-import Simplelightbox from 'simplelightbox';
+import SimpleLightbox from 'simplelightbox';
 import 'simplelightbox/dist/simple-lightbox.min.css';
 
 const gallery = document.querySelector('.gallery');
 const loader = document.querySelector('.loader');
 
-const lightbox = new Simplelightbox('.gallery a', {
-  captionData: 'alt',
-  captionDlay: 250,
+const lightbox = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay: 250,
 });
 
 export function createGallery(images) {
